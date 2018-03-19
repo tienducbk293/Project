@@ -20,34 +20,9 @@ Route::get('/homepage',[
 	'uses'=>'PageController@getIndex'
 ]);
 
-Route::get('/single',[
-	'as'=>'single',
-	'uses'=>'PageController@getSingle'
-]);
-
-Route::get('/category',[
-	'as'=>'category',
-	'uses'=>'PageController@getCategory'
-]);
-
 Route::get('/search',[
 	'as'=>'search',
 	'uses'=>'PageController@getSearch'
-]);
-
-Route::get('/archive',[
-	'as'=>'archive',
-	'uses'=>'PageController@getArchive'
-]);
-
-Route::get('/generic',[
-	'as'=>'generic',
-	'uses'=>'PageController@getGeneric'
-]);
-
-Route::get('/elements',[
-	'as'=>'elements',
-	'uses'=>'PageController@getElements'
 ]);
 
 ?>
