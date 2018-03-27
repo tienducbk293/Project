@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
             <!-- Start top-section Area -->
-            <section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="source/assets/img/banner.jpg">
+            <section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="source/assets/img/banner-city.jpg">
                 <div class="overlay-bg overlay"></div>
                 <div class="container">
                     <div class="row fullscreen justify-content-center align-items-center d-flex ">
