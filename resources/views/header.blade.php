@@ -12,18 +12,9 @@
 	        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
 			    <ul class="navbar-nav">
 	        <li><a href="{{route('homepage')}}#home">Home</a></li>
-	        <li><a href="{{route('homepage')}}#travel">Information</a></li>
-	        <li><a href="{{route('homepage')}}#news">News</a></li>
-	        <!-- Dropdown -->
-				        <li class="dropdown">
-						    <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-							        Pages
-						    </a>
-						    <div class="dropdown-menu">
-							     <a class="dropdown-item" href="{{route('search')}}">Search</a>
-						    </div>
-				        </li>								
-			        </ul>
+	        <li><a href="{{route('homepage')}}#chart">Chart</a></li>
+	        <li><a href="{{route('homepage')}}#maps">Map</a></li>
+	        <li><a href="{{route('homepage')}}#team">Contact</a></li>
 	        </div>						
 		</div>
 	</nav>

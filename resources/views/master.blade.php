@@ -15,7 +15,7 @@
 	<meta charset="UTF-8">
 	<!-- Site Title -->
 	<title>Environment</title>
-	<base href="{{asset('')}}">
+	{!! Charts::styles() !!}
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 	<!--
 	CSS
@@ -25,6 +25,16 @@
 	<link rel="stylesheet" href="source/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="source/assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="source/assets/css/main.css">
+	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+
+	
+
+	<style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
 </head>
 <body>
 	@include('header')
@@ -39,6 +49,8 @@
 	<script src="source/assets/js/owl.carousel.min.js"></script>		
 	<script src="source/assets/js/jquery.magnific-popup.min.js"></script>				
 	<script src="source/assets/js/jquery.sticky.js"></script>
-	<script src="source/assets/js/main.js"></script>	
+	<script src="source/assets/js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&sensor=true&key=AIzaSyDa-JT08xt97W6UPBDoOzi34vEtkWLv-j4&callback=initMap" async defer>
+	</script>
 </body>
 </html>
