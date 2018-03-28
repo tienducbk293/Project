@@ -29,9 +29,10 @@
 		<center>
             {!! $chart->html() !!}
         </center>
+        {!! Charts::scripts() !!}
+    	{!! $chart->script() !!}	
 	</div>
-	{!! Charts::scripts() !!}
-    {!! $chart->script() !!}					
+					
 </section>
 <!-- End information Area -->
 

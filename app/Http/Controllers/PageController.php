@@ -17,6 +17,7 @@ class PageController extends Controller
   			->elementLabel('My nice label')
   			->labels(['First', 'Second', 'Third'])
   			->values([5,10,20])
+  			->colors(['#2196F3', '#F44336', '#FFC107'])
   			->dimensions(1000,500)
   			->responsive(false);
     	return view('page.homepage', ['chart' => $chart]);
