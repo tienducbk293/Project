@@ -1,0 +1,48 @@
+.color {
+	width: 80px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.stitle {
+	border: 1px solid #263238 !important;
+	color: #fff; padding: 10px 6px;
+	font-size: 18px;
+	font-weight: bold;
+	background: #607D8B;
+}
+
+.active {
+	background-color: #C7C7C6;
+}
+
+.dailyAQI {
+	border: 1px solid #aaa;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    background-color: yellow;
+}
+
+.none_border {
+	border: none;
+}
+
+.indicatorAQI {
+	border: 1px solid #aaa;
+    padding: 20px 4px;
+    width: 205px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+}
