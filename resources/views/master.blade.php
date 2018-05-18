@@ -52,6 +52,5 @@
 	<script src="source/assets/js/main.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&sensor=true&key=AIzaSyDa-JT08xt97W6UPBDoOzi34vEtkWLv-j4&callback=initMap" async defer>
 	</script>
-	
 </body>
 </html>
