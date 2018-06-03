@@ -81,7 +81,38 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>id_track</th>
+                                <th>time</th>
+                                <th>NO2</th>
+                                <th>CO</th>
+                                <th>PM2.5</th>
+                                <th>PM10</th>
+                                <th>SO2</th>
+                                <th>O3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($data as $item)
+                            <tr>
+                                <td>{{$item->id}}</td>
+                                <td>{{$item->id_track}}</td>
+                                <td>{{$item->time}}</td>
+                                <td>{{$item->NO2}}</td>
+                                <td>{{$item->CO}}</td>
+                                <td>{{$item->PM2_5}}</td>
+                                <td>{{$item->PM10}}</td>
+                                <td>{{$item->SO2}}</td>
+                                <td>{{$item->O3}}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -90,6 +121,7 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+
         </div>
     </body>
 </html>
