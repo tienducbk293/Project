@@ -7,6 +7,13 @@
 			<div>
 				<h2 class="stitle" style="width: 440px;">ĐỒ THỊ</h2>
 			</div>
+			<div>
+				<select class="form-control chosen-select" name="location_id">
+					@foreach($locations as $location)
+						<option value="{{$location->location_id}}">{{$location->locate}}</option>
+					@endforeach
+				</select>
+			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<span class="dailyAQI">AQI 77</span>
@@ -16,33 +23,10 @@
 				</div>
 			</div>
 			<hr class="none_border">
-			<div>
-				<ul>
-					<li style="float: top">
-						<div>
-							{!! $chart1->html() !!}
-						</div>  
-						{!! Charts::scripts() !!}
-    					{!! $chart1->script() !!}
-					</li>
-					<hr class="none_border">              
-					<li style="float: center">
-						<div>
-							{!! $chart2->html() !!}
-						</div>
-						{!! Charts::scripts() !!}
-    					{!! $chart2->script() !!}
-					</li>
-					<hr class="none_border">
-					<li style="float: bottom">
-						<div>
-							{!! $chart3->html() !!}
-						</div>
-						{!! Charts::scripts() !!}
-    					{!! $chart3->script() !!}
-					</li>
-				</ul>
-			</div>	
+			<div class="panel-body" style="background-color: white">
+                <canvas id="canvas" style="width: 100%"></canvas>
+                <canvas id="canvas1" style="width: 100%"></canvas>
+            </div>
 		</div>
 		<div style="float: right; width: 60%; height: 340px">
 			<div>
