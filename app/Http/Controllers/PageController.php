@@ -15,36 +15,25 @@ class PageController extends Controller
 {
   public function getIndex(){
     $locations = Location::all(['id', 'locate']);
-    Mapper::map(21.005618, 105.843347);
-    $chart1 = Charts::create('bar', 'highcharts')
-        ->title('Top chart')
-        ->elementLabel('Top label')
-        ->labels(['First', 'Second', 'Third'])
-        ->values([5,10,20])
-        ->colors(['#2196F3', '#FFC107', '#F44336'])
-        ->dimensions(440,250)
-        ->responsive(false);
-    $chart2 = Charts::create('bar', 'highcharts')
-      ->title('Center chart')
-      ->elementLabel('Center label')
-      ->labels(['First', 'Second', 'Third'])
-      ->values([10,5,20])
-      ->colors(['#F44336', '#FFC107', '#2196F3'])
-      ->dimensions(440,250)
-      ->responsive(false);
-    $chart3 = Charts::create('bar', 'highcharts')
-      ->title('Bottom chart')
-      ->elementLabel('Bottom label')
-      ->labels(['First', 'Second', 'Third'])
-      ->values([10,20,5])
-      ->colors(['#FFC107', '#F44336', '#2196F3'])
-      ->dimensions(440,250)
-      ->responsive(false);
-    return view('page.homepage', ['chart1' => $chart1, 'chart2' => $chart2, 'chart3' => $chart3], compact('locations', $locations));
+    return view('page.homepage', compact('locations'));
+  }
+
+  public function getTest() {
+    $items = AQIdata::where('id_track',1)->take(5)->get();
+    print_r($items);
+    return view('page.test', compact('aqi_tracks'));
   }
 
   public function getSearch(){
     return view('page.search');
+  }
+
+  public function getLogin(){
+    return view('page.login');
+  }
+
+  public function getSignup(){
+    return view('page.signup');
   }
 
   public function gmaps(){

@@ -14,7 +14,8 @@
 			<ul class="nav navbar-nav" style="color: white">
 	       		<li><a href="{{route('homepage')}}">Home</a></li>
 	        	<li><a href="{{route('homepage')}}#cat">Infomation</a></li>
-	        	<li><a href="{{route('homepage')}}#team">Contact</a></li>
+	        	<li><a href="{{route('login')}}">Sign In</a></li>
+	        	<li><a href="{{route('signup')}}">Sign Up</a></li>
 	        </ul>					
 		</div>
 	</nav>

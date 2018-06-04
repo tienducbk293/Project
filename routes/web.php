@@ -53,12 +53,22 @@ Route::get('gmaps', 'PageController@gmaps');
 
 Route::get('/homepage/aqi','PageController@chart');
 
-Route::get('aqi',[
-	'as'=>'aqi',
-	'uses'=>'AQIController@index'
+Route::get('test',[
+	'as'=>'test',
+	'uses'=>'PageController@getTest'
 ]);
 Route::get('aqi/chart',[
 	'as'=>'chart',
 	'uses'=>'AQIController@chart'
+]);
+
+Route::get('login',[
+	'as' => 'login',
+	'uses' => 'PageController@getLogin'
+]);
+
+Route::get('signup',[
+	'as' => 'signup',
+	'uses' => 'PageController@getSignup'
 ]);
 ?>

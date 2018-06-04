@@ -25,14 +25,13 @@
 			<hr class="none_border">
 			<div class="panel-body" style="background-color: white">
                 <canvas id="canvas" style="width: 100%"></canvas>
-                <canvas id="canvas1" style="width: 100%"></canvas>
             </div>
 		</div>
 		<div style="float: right; width: 60%; height: 340px">
 			<div>
 				<h2 class="stitle">BẢN ĐỒ</h2>
 			</div>
-			{!! Mapper::render() !!}
+			<div id="map"></div>
 			<hr style="border: none">
 			<div>
 				<h2 class="stitle">Bảng quy đổi giá trị AQI</h2>
@@ -97,6 +96,5 @@
 			</div>
 		</div>
 	</div>
-					
 </section>
 @endsection
