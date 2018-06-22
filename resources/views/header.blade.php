@@ -14,8 +14,13 @@
 			<ul class="nav navbar-nav" style="color: white">
 	       		<li><a href="{{route('homepage')}}">Home</a></li>
 	        	<li><a href="{{route('homepage')}}#cat">Infomation</a></li>
-	        	<li><a href="{{route('login')}}">Sign In</a></li>
-	        	<li><a href="{{route('signup')}}">Sign Up</a></li>
+	        	@if(Auth::check())
+	        		<li><a href="{{route('admin.pages.survey')}}">{{Auth::user()->name}}</a></li>
+	        		<li><a href="{{route('logout')}}">Sign Out</a></li>
+	        	@else
+	        		<li><a href="{{route('login')}}">Sign In</a></li>
+	        		<li><a href="{{route('signup')}}">Sign Up</a></li>
+	        	@endif
 	        </ul>					
 		</div>
 	</nav>
