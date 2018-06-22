@@ -4,7 +4,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="source/assets/img/fav.png">
+	<link rel="shortcut icon" href="public/img/fav.png">
 	<!-- Author Meta -->
 	<meta name="author" content="colorlib">
 	<!-- Meta Description -->
@@ -21,12 +21,12 @@
 	<!--
 	CSS
 	============================================= -->
-	<link rel="stylesheet" href="source/assets/css/linearicons.css">
-	<link rel="stylesheet" href="source/assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="source/assets/css/bootstrap.css">
-	<link rel="stylesheet" href="source/assets/css/owl.carousel.css">
-	<link rel="stylesheet" href="source/assets/css/main.css">
-	<link rel="stylesheet" href="source/assets/css/style.css">
+	<link rel="stylesheet" href="public/css/linearicons.css">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/css/bootstrap.css">
+	<link rel="stylesheet" href="public/css/owl.carousel.css">
+	<link rel="stylesheet" href="public/css/main.css">
+	<link rel="stylesheet" href="public/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
 
@@ -38,22 +38,22 @@
     	}
   	</style>
 </head>
-<body background="source/assets/img/environment_background.jpg">
+<body background="public/img/environment_background.jpg">
 	@include('header')
 	@yield('content')
 
-	<script src="source/assets/js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="source/assets/js/vendor/bootstrap.min.js"></script>
-	<script src="source/assets/js/jquery.ajaxchimp.min.js"></script>
-	<script src="source/assets/js/parallax.min.js"></script>			
-	<script src="source/assets/js/owl.carousel.min.js"></script>		
-	<script src="source/assets/js/jquery.magnific-popup.min.js"></script>				
-	<script src="source/assets/js/jquery.sticky.js"></script>
-	<script src="source/assets/js/main.js"></script>
+	<script src="public/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="public/js/vendor/bootstrap.min.js"></script>
+	<script src="public/js/jquery.ajaxchimp.min.js"></script>
+	<script src="public/js/parallax.min.js"></script>			
+	<script src="public/js/owl.carousel.min.js"></script>		
+	<script src="public/js/jquery.magnific-popup.min.js"></script>				
+	<script src="public/js/jquery.sticky.js"></script>
+	<script src="public/js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js" charset="utf-8"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDefelIjrBjLQtkK9SJmXzh83J5omlql9M&callback=initMap"
   type="text/javascript"></script>
-	<script src="{{ asset('js/Chart.js') }}"></script>
+	<script src="{{ asset('public/js/Chart.js') }}"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false" 
           type="text/javascript"></script>
 	<script type="text/javascript">

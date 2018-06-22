@@ -17,10 +17,10 @@
 	<!-- end: Mobile Specific -->
 	
 	<!-- start: CSS -->
-	<link id="bootstrap-style" href="{{url('admin/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{url('admin/css/bootstrap-responsive.min.css')}}" rel="stylesheet">
-	<link id="base-style" href="{{url('admin/css/style.css')}}" rel="stylesheet">
-	<link id="base-style-responsive" href="{{url('admin/css/style-responsive.css')}}" rel="stylesheet">
+	<link id="bootstrap-style" href="{{url('public/admin/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url('public/admin/css/bootstrap-responsive.min.css')}}" rel="stylesheet">
+	<link id="base-style" href="{{url('public/admin/css/style.css')}}" rel="stylesheet">
+	<link id="base-style-responsive" href="{{url('public/admin/css/style-responsive.css')}}" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- end: CSS -->
@@ -40,13 +40,13 @@
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<!-- end: Favicon -->
 	<!-- CKEDITOR - CKFINDER  -->
-	<script src="{{url('admin/js/ckeditor/ckeditor.js')}}"></script>
-	<script src="{{url('admin/js/ckfinder/ckfinder.js')}}"></script>
+	<script src="{{url('public/admin/js/ckeditor/ckeditor.js')}}"></script>
+	<script src="{{url('public/admin/js/ckfinder/ckfinder.js')}}"></script>
 
 	<script type="text/javascript">
 		var baseURL = "{!! url('/') !!}";
 	</script>
-	<script src="{{url('admin/js/func_ckfinder.js')}}"></script>
+	<script src="{{url('public/admin/js/func_ckfinder.js')}}"></script>
 
 	<!-- End CKEDITOR - CKFINDER  -->
 </head>
