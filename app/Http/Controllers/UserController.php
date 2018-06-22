@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\LoginRequest;
+use App\Http\Requests\PostEditRequest;
+use App\User;
+use Hash;
+use Auth;
+use Redirect;
+use Request;
 class UserController extends Controller
 {
     public function getAdd(){

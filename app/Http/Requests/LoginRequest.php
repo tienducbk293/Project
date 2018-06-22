@@ -23,15 +23,14 @@ class LoginRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'name' =>'required',
+         return [
+            'username' =>'required',
             'password' =>'required'
         ];
     }
-
     public function messages(){
         return [
-            'name.required'=>'Nhập vào tên đăng nhập ! ',
+            'username.required'=>'Nhập vào tên đăng nhập ! ',
             'password.required'=>'Nhập vào mật khẩu  ! '
         ];
     }

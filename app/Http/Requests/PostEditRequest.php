@@ -27,7 +27,6 @@ class PostEditRequest extends FormRequest
             'txtRePass' => 'same:txtPass'
         ];
     }
-
     public function messages(){
         return[
             'txtRePass.same' => 'Mật khẩu không trùng khớp .'
