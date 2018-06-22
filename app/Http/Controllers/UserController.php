@@ -9,7 +9,6 @@ use App\User;
 use Hash;
 use Auth;
 use Redirect;
-use Request;
 class UserController extends Controller
 {
     public function getAdd(){
@@ -93,5 +92,11 @@ class UserController extends Controller
         
             return redirect()->route('admin.users.getList')->with(['flash_message','Đã xóa thành công ! ']);
         }
+    }
+
+    public function getDetail($id){
+        $data = User::findOrFail($id)->toArray();
+        $user_detail = User::find($id)->userDetail;
+        return view('admin.users.details',compact('data','id','user_detail'));
     }
 }

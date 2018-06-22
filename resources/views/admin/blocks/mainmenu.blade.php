@@ -6,18 +6,17 @@
 			<li><a href="{{route('admin.users.getList')}}"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span class="hidden-tablet"> Quản lý tài khoản</span></a></li>
 			<li>
 				<a class="dropmenu" href="#"><i class="fa fa-refresh fa-5x" aria-hidden="true"></i>
-				<span class="hidden-tablet"> Quản lý sản phẩm</span></a>
+				<span class="hidden-tablet"> Quản lý chỉ số</span></a>
 				<ul>
-					<li><a class="submenu" href="#"><i class="fa fa-braille" aria-hidden="true" ></i><span class="hidden-tablet"> Danh mục sản phẩm</span></a></li>
-					<li><a class="submenu" href="#"><i class="fa fa-braille" aria-hidden="true" ></i><span class="hidden-tablet"> Danh mục tác giả</span></a></li>
-					<li><a class="submenu" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i><span class="hidden-tablet"> Sản phẩm</span></a></li>
+					<li><a class="submenu" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i><span class="hidden-tablet">AQI</span></a></li>
+					<li><a class="submenu" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i><span class="hidden-tablet">Nồng độ</span></a></li>
 				</ul>	
 			</li>
 			<li>
 				<a class="dropmenu" href="#"><i class="fa fa-refresh fa-5x" aria-hidden="true"></i>
-				<span class="hidden-tablet"> Quản lý hóa đơn</span></a>
+				<span class="hidden-tablet"> Quản lý danh mục</span></a>
 				<ul>
-					<li><a class="submenu" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i><span class="hidden-tablet"> Đơn hàng</span></a></li>
+					<li><a class="submenu" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i><span class="hidden-tablet">Địa điểm</span></a></li>
 				</ul>	
 			</li>
 			<li><a href="{!! route('admin.pages.calendar') !!}"><i class="icon-calendar"></i><span class="hidden-tablet"> Lịch</span></a></li>

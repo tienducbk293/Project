@@ -38,7 +38,7 @@
     	}
   	</style>
 </head>
-<body style="background-color: #f0f5f5">
+<body background="source/assets/img/environment_background.jpg">
 	@include('header')
 	@yield('content')
 

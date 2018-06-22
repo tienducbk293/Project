@@ -42,15 +42,15 @@
 						</div>
 
 						<div class="form-block">
-							<label for="your_last_name">Fullname*</label>
+							<label for="fullname">Fullname*</label>
 							<input type="text" name="name" required>
 						</div>
 						<div class="form-block">
-							<label for="phone">Password*</label>
+							<label for="password">Password*</label>
 							<input type="password" name="password" required>
 						</div>
 						<div class="form-block">
-							<label for="phone">Re password*</label>
+							<label for="re_password">Re password*</label>
 							<input type="password" name="re_password" required>
 						</div>
 						<div class="form-block">
