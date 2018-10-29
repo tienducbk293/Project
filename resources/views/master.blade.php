@@ -4,7 +4,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="public/img/fav.png">
+	
 	<!-- Author Meta -->
 	<meta name="author" content="colorlib">
 	<!-- Meta Description -->
@@ -27,12 +27,15 @@
 	<link rel="stylesheet" href="public/css/owl.carousel.css">
 	<link rel="stylesheet" href="public/css/main.css">
 	<link rel="stylesheet" href="public/css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
 
 	<style type="text/css">
     	#map {
-      		border:1px solid red;
+      		border:1px solid;
       		width: 100%; 
       		height: 340px
     	}
@@ -57,40 +60,39 @@
 	<script src="http://maps.google.com/maps/api/js?sensor=false" 
           type="text/javascript"></script>
 	<script type="text/javascript">
-    var locations = [
-  ['Hoàn Kiếm', 21.03075400, 105.85239200, 1],
-  ['Thành Công', 21.02035900, 105.81430400, 2],
-  ['Tân Mai', 20.98368700, 105.84815600, 3],
-  ['Kim Liên', 21.00669400, 105.83563500, 4],
-  ['Phạm Văn Đồng', 21.062451, 105.784071, 5],
-  ['Tây Mỗ', 21.00885300, 105.74391900, 6],
-  ['Mỹ Đình', 21.02039900, 105.76396500, 7],
-  ['Hàng Đậu', 21.04038100, 105.84889100, 8],
-  ['Chi cục bảo vệ môi trường', 21.01528400, 105.79999600, 9],
-  ['Minh Khai - Bắc Từ Liêm', 21.06047200, 105.74978800, 10]
-];
+		var locations = [
+			['Hoàn Kiếm', 21.03075400, 105.85239200, 1],
+			['Thành Công', 21.02035900, 105.81430400, 2],
+			['Tân Mai', 20.98368700, 105.84815600, 3],
+			['Kim Liên', 21.00669400, 105.83563500, 4],
+			['Phạm Văn Đồng', 21.062451, 105.784071, 5],
+			['Tây Mỗ', 21.00885300, 105.74391900, 6],
+			['Mỹ Đình', 21.02039900, 105.76396500, 7],
+			['Hàng Đậu', 21.04038100, 105.84889100, 8],
+			['Chi cục bảo vệ môi trường', 21.01528400, 105.79999600, 9],
+			['Minh Khai - Bắc Từ Liêm', 21.06047200, 105.74978800, 10]
+		];
 
-function initMap() {
-  var myLatLng = {lat: 21.062451, lng: 105.784071};
+		function initMap() {
+			var myLatLng = {lat: 21.062451, lng: 105.784071};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 12,
+				center: myLatLng
+			});
 
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: myLatLng
-    });
+			var count;
 
-  var count;
-
-  for (count = 0; count < locations.length; count++) {  
-    new google.maps.Marker({
-      position: new google.maps.LatLng(locations[count][1], locations[count][2]),
-      map: map,
-      title: locations[count][0]
-      });
-   }
-}
-  </script>
+			for (count = 0; count < locations.length; count++) {  
+				new google.maps.Marker({
+					position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+					map: map,
+					title: locations[count][0]
+				});
+			}
+		}
+	</script>
 	<script>
-		new Chart(document.getElementById("canvas"),{
+	new Chart(document.getElementById("canvas"),{
 			"type":
 			"bar",
 			"data":{

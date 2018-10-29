@@ -8,7 +8,7 @@
 				<h2 class="stitle" style="width: 440px;">ĐỒ THỊ</h2>
 			</div>
 			<div>
-				<select class="form-control chosen-select" name="location_id">
+				<select class="form-control chosen-select" name="location_id" style="height:40px">
 					@foreach($locations as $location)
 						<option value="{{$location->location_id}}">{{$location->locate}}</option>
 					@endforeach
@@ -98,3 +98,4 @@
 	</div>
 </section>
 @endsection
+
