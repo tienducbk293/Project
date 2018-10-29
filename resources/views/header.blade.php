@@ -4,24 +4,27 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="{{route('homepage')}}">
-		        	<img style = "height: 40px; width: 90px" src="public/img/environment_logo.jpg" alt="">
-	        	</a>
-	        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      				<img style = "height: 40px; width: 40px" src="public/img/logo.png" alt="">
+      			</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    	<span class="navbar-toggler-icon"></span>
-	        	</button>	
+	        	</button>
 			</div>
-
-			<ul class="nav navbar-nav" style="color: white">
-	       		<li><a href="{{route('homepage')}}">Home</a></li>
-	        	<li><a href="{{route('homepage')}}#cat">Infomation</a></li>
-	        	@if(Auth::check())
-	        		<li><a href="{{route('admin.pages.survey')}}">{{Auth::user()->name}}</a></li>
-	        		<li><a href="{{route('logout')}}">Sign Out</a></li>
-	        	@else
-	        		<li><a href="{{route('login')}}">Sign In</a></li>
-	        		<li><a href="{{route('signup')}}">Sign Up</a></li>
-	        	@endif
-	        </ul>					
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+           			<li class="active"><a href="{{route('homepage')}}">Home</a></li>
+           			<li><a href="#">Infomation</a></li>
+        		</ul>
+        		<ul class="nav navbar-nav navbar-right">
+        			@if(Auth::check())
+	        			<li><a href="{{route('admin.pages.survey')}}"><span class="glyphicon glyphicon-user"> {{Auth::user()->name}}</a></li>
+	        			<li><a href="{{route('logout')}}"> Log Out</a></li>
+	        		@else
+	        			<li><a href="{{route('login')}}"> Log In</a></li>
+	        			<li><a href="{{route('signup')}}"></span> Sign Up</a></li>
+	        		@endif
+      			</ul>
+			</div>
 		</div>
 	</nav>
 </header>
